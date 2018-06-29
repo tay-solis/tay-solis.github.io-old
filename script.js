@@ -4,7 +4,7 @@ var slides = getSlides(href);
 function getSlides(href){
   // if(href === "homo.html"){
   switch (href){
-    case "homo.html":
+    case "homo.html": case "/art/homo.html":
       slides = [
         "https://res.cloudinary.com/tayjsolis/image/upload/v1522699906/09011603.jpg.jpg",
         "https://res.cloudinary.com/tayjsolis/image/upload/v1522699611/homo_web.jpg",
