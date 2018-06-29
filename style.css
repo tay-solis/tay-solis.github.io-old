@@ -166,8 +166,9 @@
   }
   .slideshow img{
     max-width: 90%;
-    max-height: 85vh;
+    max-height: 80vh;
     margin: 0 auto;
+    margin-top: 15vh;
     display: none;
   }
   #show{

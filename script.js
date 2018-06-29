@@ -1,10 +1,10 @@
+var href = document.location.href.match(/[^\/]+$/)[0];
 var slides = getSlides(href);
-var href = document.location.pathname;
 
 function getSlides(href){
-  var slides = [];
+  // if(href === "homo.html"){
   switch (href){
-    case "http://tayjsolis.com/art/homo.html":
+    case "homo.html":
       slides = [
         "https://res.cloudinary.com/tayjsolis/image/upload/v1522699906/09011603.jpg.jpg",
         "https://res.cloudinary.com/tayjsolis/image/upload/v1522699611/homo_web.jpg",
@@ -32,6 +32,9 @@ var currentSlide = 0;
 $(document).ready(function(){
     $('.welcome').fadeIn(1000).css('display', 'block');
     $('.container').fadeIn(1000).css('display', 'block');
+    $$('.slides').children('#show').attr('src', slides[currentSlide]);
+
+
 });
 
 window.sr = ScrollReveal({ reset: true });
