@@ -1,42 +1,44 @@
-var href = document.location.href.match(/[^\/]+$/)[0];
-var slides = getSlides(href);
+var href = "";
+var slides = "";
+if (document.location.href.match(/[^\/]+$/)[0]){
+  slides = getSlides(href);
 
-function getSlides(href){
-  // if(href === "homo.html"){
-  switch (href){
-    case "homo.html":
-      slides = [
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699906/09011603.jpg.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699611/homo_web.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699863/07081602.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699987/smol.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699877/07081607.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699982/meet_peep_web.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699974/meet_peep_6.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699890/meep_peep_1.jpg"
-      ];
-      break;
-    case "/art/homo.html":
-      slides = [
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699906/09011603.jpg.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699611/homo_web.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699863/07081602.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699987/smol.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699877/07081607.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699982/meet_peep_web.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699974/meet_peep_6.jpg",
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699890/meep_peep_1.jpg"
-      ];
-      break;
-    case "wanderlust.html":
-      slides = [
-        "https://res.cloudinary.com/tayjsolis/image/upload/v1522699787/exhibit_poster_art_printing.jpg"
-      ];
-      break;
+  function getSlides(href){
+    // if(href === "homo.html"){
+    switch (href){
+      case "homo.html":
+        slides = [
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699906/09011603.jpg.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699611/homo_web.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699863/07081602.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699987/smol.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699877/07081607.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699982/meet_peep_web.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699974/meet_peep_6.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699890/meep_peep_1.jpg"
+        ];
+        break;
+      case "/art/homo.html":
+        slides = [
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699906/09011603.jpg.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699611/homo_web.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699863/07081602.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699987/smol.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699877/07081607.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699982/meet_peep_web.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699974/meet_peep_6.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699890/meep_peep_1.jpg"
+        ];
+        break;
+      case "wanderlust.html":
+        slides = [
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699787/exhibit_poster_art_printing.jpg"
+        ];
+        break;
+    }
+    return slides;
+
   }
-  return slides;
-
-}
 
 var currentSlide = 0;
 
