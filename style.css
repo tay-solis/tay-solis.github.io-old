@@ -126,6 +126,10 @@
     width: 40%;
   }
 
+  .show{
+    display: block;
+  }
+
   .intro{
     position:relative;
     left: 5%;
