@@ -317,13 +317,12 @@ button{
 .first{
   margin-top: 100px;
   /* height: 70vh; */
-  display: none;
+  display:block;
 }
 
 .welcome{
   margin-top: 100px;
   height: 70vh;
-  display: none;
 }
 
 .intro{
