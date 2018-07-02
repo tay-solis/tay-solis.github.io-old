@@ -44,7 +44,7 @@ var currentSlide = 0;
 $(document).ready(function(){
     $('.welcome').fadeIn(1000).css('display', 'block');
     $('.container').fadeIn(1000).css('display', 'block');
-    $$('.slides').children('#show').attr('src', slides[currentSlide]);
+    $('.slides').children('#show').attr('src', slides[currentSlide]);
 
 
 });
@@ -64,6 +64,7 @@ $(window).resize(function(){
   if($(window).width() <= 800){
     currentSlide = 0;
     $('.slides').children('#show').attr('src', slides[currentSlide]);
+    $('.dropdown-content').css('display','none');
   }
 });
 

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 480px){
   .hamburger{
     display: block;
     position: absolute;
@@ -10,6 +10,10 @@
     display:none;
   }
 
+  .navbar a{
+    display:block;
+    text-align: center;
+  }
   .dropdown{
     text-align: center;
     padding: 0px;
@@ -27,12 +31,8 @@
     padding: 10px;
     text-align: center;
     position: relative;
-    left: -.25em;
+    /* left:   -10vw; */
     border-top: 1px solid #e06b1d;
-  }
-  .navbar a{
-    display:block;
-    text-align: center;
   }
 
   .welcome{
@@ -70,7 +70,7 @@
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 480px) {
   .hamburger{
       display: none;
   }
