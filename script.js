@@ -41,6 +41,7 @@ if (document.location.href.match(/[^\/]+$/)[0]){
   }
 
 var currentSlide = 0;
+var e = "taysolis";
 
 
 $(document).ready(function(){
@@ -48,6 +49,37 @@ $(document).ready(function(){
     $('.container').fadeIn(1000).css('display', 'block');
     $('.slides').children('#show').attr('src', slides[currentSlide]);
 
+    // Treehouse Json
+      t = "https://teamtreehouse.com/" + e + ".json",
+
+      // Badges JQuery Identifier
+      n = $("#badges"),
+
+      // Badges Array
+      r = [],
+
+      // Badges Count
+      i = 0;
+
+      // Json Parse Treehouse User Badges Info
+      $.getJSON(t, function (e) {
+
+        // User Json Parse Select Badges Info
+      	var t = e.badges;
+
+        // Construct Each badge's HTML
+      	$.each(t, function (e, t) {
+      	 r += '<li><a href="' + t.url + '" target="_blank"><img src="' + t.icon_url + '" alt="' + t.name + '" title="' + t.name + '"/></a></li>';
+      		i++
+      	});
+
+        // Append Badge to #badges
+      	n.append(r);
+
+        // Header Badges count generator
+      	$("#treehouse-count").append('I have earned ' + i + ' badges at Treehouse!');
+
+        });
 
 });
 
@@ -89,3 +121,4 @@ $('.next').click(function(){
     $('.slides').children('#show').attr('src', slides[currentSlide]);
   }
 });
+};
