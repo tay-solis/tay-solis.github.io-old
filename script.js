@@ -1,10 +1,7 @@
 var href = "";
 var slides = "";
-<<<<<<< HEAD
-if (document.location.href.match(/[^\/]+$/)[0]){
-=======
+
 if (document.location.href.match(/[^\/]+$/) != null){
->>>>>>> 564ff00c9a39f4ed43fce91bef4d22bdde2c5bb4
   href = document.location.href.match(/[^\/]+$/)[0];
   slides = getSlides(href);
 
@@ -35,13 +32,13 @@ if (document.location.href.match(/[^\/]+$/) != null){
           "https://res.cloudinary.com/tayjsolis/image/upload/v1522699890/meep_peep_1.jpg"
         ];
         break;
-<<<<<<< HEAD
+
       case "wanderlust.html":
         slides = [
           "https://res.cloudinary.com/tayjsolis/image/upload/v1522699787/exhibit_poster_art_printing.jpg"
         ];
         break;
-=======
+
       case "/art/wanderlust.html":
         slides = [
           "https://res.cloudinary.com/tayjsolis/image/upload/v1522699787/exhibit_poster_art_printing.jpg",
@@ -68,7 +65,7 @@ if (document.location.href.match(/[^\/]+$/) != null){
             "https://res.cloudinary.com/tayjsolis/image/upload/v1530549993/Screen_Shot_2018-07-02_at_9.45.22_AM.png"
           ];
           break;
->>>>>>> 564ff00c9a39f4ed43fce91bef4d22bdde2c5bb4
+
     }
     return slides;
 

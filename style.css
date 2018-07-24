@@ -401,7 +401,10 @@ button{
 
 
 /* Controls width of the widget */
-.badge-container {width:700px; margin: 0 auto;}
+.badge-container {
+  width:700px;
+  margin: 0 auto;
+  margin-bottom: 4em;}
 
 /* Makes Badges display inline */
 #badges li { display: inline;}
