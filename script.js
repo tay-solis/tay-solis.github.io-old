@@ -1,6 +1,6 @@
 var href = "";
 var slides = "";
-if (document.location.href.match(/[^\/]+$/)[0]){
+if (document.location.href.match(/[^\/]+$/)[0] != null){
   href = document.location.href.match(/[^\/]+$/)[0];
   slides = getSlides(href);
 
