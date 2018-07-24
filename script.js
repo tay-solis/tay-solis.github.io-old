@@ -1,6 +1,6 @@
 var href = "";
 var slides = "";
-if (document.location.href != "http://tayjsolis.com/"|| document.location.href.match(/[^\/]+$/)[0]){
+if (document.location.href != "http://tayjsolis.com/" || document.location.href.match(/[^\/]+$/)[0]){
   href = document.location.href.match(/[^\/]+$/)[0];
   slides = getSlides(href);
 
