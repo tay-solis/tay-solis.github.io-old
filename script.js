@@ -45,6 +45,7 @@ if (document.location.href.match(/[^\/]+$/) != null){
   function getSlides(href){
     // ex. if(href === "homo.html"){
     switch (href){
+        //art
       case "homo.html":
         slides = [
           "https://res.cloudinary.com/tayjsolis/image/upload/v1522699906/09011603.jpg.jpg",
@@ -102,6 +103,24 @@ if (document.location.href.match(/[^\/]+$/) != null){
             "https://res.cloudinary.com/tayjsolis/image/upload/v1530549993/Screen_Shot_2018-07-02_at_9.45.22_AM.png"
           ];
           break;
+        
+        //Design
+        case "web-design.html":
+          slides = [
+            "https://res.cloudinary.com/tayjsolis/image/upload/v1532538868/Screen_Shot_2018-07-25_at_10.12.47_AM.png",
+            "https://res.cloudinary.com/tayjsolis/image/upload/v1532538868/Screen_Shot_2018-07-25_at_10.13.01_AM.png",
+            "https://res.cloudinary.com/tayjsolis/image/upload/v1532538869/Screen_Shot_2018-07-25_at_10.13.14_AM.png",
+            "https://res.cloudinary.com/tayjsolis/image/upload/v1532538869/Screen_Shot_2018-07-25_at_10.13.38_AM.png"
+          ];
+          break
+          case "/design/web-design.html":
+            slides = [
+              "https://res.cloudinary.com/tayjsolis/image/upload/v1532538868/Screen_Shot_2018-07-25_at_10.12.47_AM.png",
+              "https://res.cloudinary.com/tayjsolis/image/upload/v1532538868/Screen_Shot_2018-07-25_at_10.13.01_AM.png",
+              "https://res.cloudinary.com/tayjsolis/image/upload/v1532538869/Screen_Shot_2018-07-25_at_10.13.14_AM.png",
+              "https://res.cloudinary.com/tayjsolis/image/upload/v1532538869/Screen_Shot_2018-07-25_at_10.13.38_AM.png"
+            ];
+            break;
 
     }
     return slides;
