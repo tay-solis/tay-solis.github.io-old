@@ -5,7 +5,7 @@ var slides = "";
 if (document.location.href.match(/[^\/]+$/) != null){
   href = document.location.href.match(/[^\/]+$/)[0];
   slides = getSlides(href);
-  
+
   if(href === "/development/skills.html" || href === "skills.html"){
     /*
     // Treehouse Json
@@ -73,7 +73,9 @@ if (document.location.href.match(/[^\/]+$/) != null){
 
       case "wanderlust.html":
         slides = [
-          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699787/exhibit_poster_art_printing.jpg"
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1522699787/exhibit_poster_art_printing.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1530551692/2014-05-28_19.59.01_copy.jpg",
+          "https://res.cloudinary.com/tayjsolis/image/upload/v1530551595/wanderlust_sample_page-Recovered_copy.jpg"
         ];
         break;
 
@@ -103,7 +105,17 @@ if (document.location.href.match(/[^\/]+$/) != null){
             "https://res.cloudinary.com/tayjsolis/image/upload/v1530549993/Screen_Shot_2018-07-02_at_9.45.22_AM.png"
           ];
           break;
-        
+          case "islands.html":
+            slides = [
+              "https://res.cloudinary.com/tayjsolis/image/upload/v1522699987/tumblr_n6kbwxaVlo1r8zj4bo1_1280.jpg"
+            ]
+            break;
+          case "/art/islands.html":
+            slides = [
+              "https://res.cloudinary.com/tayjsolis/image/upload/v1522699987/tumblr_n6kbwxaVlo1r8zj4bo1_1280.jpg"
+            ]
+            break;
+
         //Design
         case "web-design.html":
           slides = [
@@ -182,4 +194,3 @@ $('.next').click(function(){
     $('.slides').children('#show').attr('src', slides[currentSlide]);
   }
 });
-
