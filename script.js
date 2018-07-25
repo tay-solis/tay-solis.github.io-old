@@ -84,7 +84,7 @@ $(document).ready(function(){
     $('.welcome').fadeIn(1000).css('display', 'block');
     $('.container').fadeIn(1000).css('display', 'block');
     $('.slides').children('#show').attr('src', slides[currentSlide]);
-
+/*
     // Treehouse Json
       t = "http://teamtreehouse.com/" + e + ".json",
 
@@ -116,7 +116,7 @@ $(document).ready(function(){
       	$("#treehouse-count").append('I have earned ' + i + ' badges at Treehouse!');
 
         });
-
+*/
 });
 
 //ScrollJS
