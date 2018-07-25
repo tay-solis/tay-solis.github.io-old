@@ -335,11 +335,12 @@ button{
 
 .section{
   position: relative;
-  top: 5em;
+  padding-top: 4em;
+  padding-bottom: 4em;
   margin: 0 auto;
   width: inherit;
   width: 100%;
-  padding: 2em;
+
 }
 
 
