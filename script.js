@@ -1,12 +1,13 @@
 var href = "";
 var slides = "";
 
+//Checks if URL has a path. If it does, href returns only the path, then provides slides based on that path.
 if (document.location.href.match(/[^\/]+$/) != null){
   href = document.location.href.match(/[^\/]+$/)[0];
   slides = getSlides(href);
 
   function getSlides(href){
-    // if(href === "homo.html"){
+    // ex. if(href === "homo.html"){
     switch (href){
       case "homo.html":
         slides = [
@@ -72,10 +73,13 @@ if (document.location.href.match(/[^\/]+$/) != null){
   }
 
 var currentSlide = 0;
+
+
 var e = "taysolis";
 
 
 $(document).ready(function(){
+  //Treehouse Badge display by Riley Hilliard : http://rileyh.com/treehouse-badges-widget/
     $('.welcome').fadeIn(1000).css('display', 'block');
     $('.container').fadeIn(1000).css('display', 'block');
     $('.slides').children('#show').attr('src', slides[currentSlide]);
@@ -114,9 +118,11 @@ $(document).ready(function(){
 
 });
 
+//ScrollJS
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.reveal', { duration: 400 }, 50);
 
+//Navbar
 $('.dropdown').click(function(){
   $(this).children('.dropdown-content').slideToggle('fast');
 });
@@ -125,6 +131,7 @@ $('.hamburger').click(function(){
   $('.navCollapse').slideToggle();
 });
 
+//Slideshow
 $(window).resize(function(){
   if($(window).width() <= 800){
     currentSlide = 0;

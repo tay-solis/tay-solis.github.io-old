@@ -37,6 +37,7 @@
 
   .welcome{
     padding: 1em;
+    margin: 2em;
   }
 
   .container img{
@@ -191,7 +192,7 @@
 body{
   margin:0;
   width: 100%;
-  background-color: #e06b1d;
+  background-color: white;
   color: #e06b1d;
   font-family: 'Open Sans', sans-serif;
 }
@@ -287,7 +288,7 @@ button{
 }
 
 .content{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 4em;
 }
@@ -295,14 +296,11 @@ button{
 .container{
   background-color:white;
   border-radius: 10px;
-  margin-top: 16px;
+  margin: 16px 20px;
   border: 1px solid #fc8e3a;
   padding: 1em;
 }
 
-.sectionHeader h2,h3{
-  color: white;
-}
 .container h1, h2, h3, h4, h5, h6{
   color: black;
 }
@@ -335,33 +333,40 @@ button{
 }
 
 
-
 .section{
   position: relative;
   top: 5em;
   margin: 0 auto;
   width: inherit;
+  width: 100%;
+  padding: 2em;
+}
+
+
+.section:nth-of-type(even){
+  background-color: #e06b1d;
+  color: white;
+}
+.section:nth-of-type(even) .container{
+  color: #e06b1d;
 }
 
 
 
 .sectionHeader{
   text-transform: uppercase;
-  color: white;
   text-align: center;
   margin-bottom: 0;
   padding-bottom: 5px;
   letter-spacing: 3px;
 }
 
+.section:nth-of-type(odd) .sectionHeader{
+  color: #e06b1d;
+}
 
-
-.contactSection{
-  position:absolute;
-  top: 200vh;
-  margin: 0 auto;
+.section:last-child{
   margin-bottom: 4em;
-  width: inherit;
 }
 
 .portrait{
@@ -388,6 +393,7 @@ button{
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  color: #e06b1d;
 }
 
 .next {
@@ -397,6 +403,7 @@ button{
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  color: white;
 }
 
 
