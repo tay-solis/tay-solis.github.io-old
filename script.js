@@ -86,7 +86,7 @@ $(document).ready(function(){
     $('.slides').children('#show').attr('src', slides[currentSlide]);
 
     // Treehouse Json
-      t = "https://teamtreehouse.com/" + e + ".json",
+      t = "http://teamtreehouse.com/" + e + ".json",
 
       // Badges JQuery Identifier
       n = $("#badges"),
