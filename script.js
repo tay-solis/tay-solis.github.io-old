@@ -5,6 +5,42 @@ var slides = "";
 if (document.location.href.match(/[^\/]+$/) != null){
   href = document.location.href.match(/[^\/]+$/)[0];
   slides = getSlides(href);
+  
+  if(href === "/development/skills.html" || href === "skills.html"){
+    /*
+    // Treehouse Json
+      t = "http://teamtreehouse.com/" + e + ".json",
+
+      // Badges JQuery Identifier
+      n = $("#badges"),
+
+      // Badges Array
+      r = [],
+
+      // Badges Count
+      i = 0;
+
+      // Json Parse Treehouse User Badges Info
+      $.getJSON(t, function (e) {
+
+        // User Json Parse Select Badges Info
+      	var t = e.badges;
+
+        // Construct Each badge's HTML
+      	$.each(t, function (e, t) {
+      	 r += '<li><a href="' + t.url + '" target="_blank"><img src="' + t.icon_url + '" alt="' + t.name + '" title="' + t.name + '"/></a></li>';
+      		i++
+      	});
+
+        // Append Badge to #badges
+      	n.append(r);
+
+        // Header Badges count generator
+      	$("#treehouse-count").append('I have earned ' + i + ' badges at Treehouse!');
+
+        });
+*/
+  }
 
   function getSlides(href){
     // ex. if(href === "homo.html"){
@@ -84,39 +120,6 @@ $(document).ready(function(){
     $('.welcome').fadeIn(1000).css('display', 'block');
     $('.container').fadeIn(1000).css('display', 'block');
     $('.slides').children('#show').attr('src', slides[currentSlide]);
-/*
-    // Treehouse Json
-      t = "http://teamtreehouse.com/" + e + ".json",
-
-      // Badges JQuery Identifier
-      n = $("#badges"),
-
-      // Badges Array
-      r = [],
-
-      // Badges Count
-      i = 0;
-
-      // Json Parse Treehouse User Badges Info
-      $.getJSON(t, function (e) {
-
-        // User Json Parse Select Badges Info
-      	var t = e.badges;
-
-        // Construct Each badge's HTML
-      	$.each(t, function (e, t) {
-      	 r += '<li><a href="' + t.url + '" target="_blank"><img src="' + t.icon_url + '" alt="' + t.name + '" title="' + t.name + '"/></a></li>';
-      		i++
-      	});
-
-        // Append Badge to #badges
-      	n.append(r);
-
-        // Header Badges count generator
-      	$("#treehouse-count").append('I have earned ' + i + ' badges at Treehouse!');
-
-        });
-*/
 });
 
 //ScrollJS
