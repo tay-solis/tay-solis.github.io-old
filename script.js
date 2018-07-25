@@ -71,6 +71,7 @@ if (document.location.href.match(/[^\/]+$/) != null){
     return slides;
 
   }
+}
 
 var currentSlide = 0;
 
@@ -159,4 +160,4 @@ $('.next').click(function(){
     $('.slides').children('#show').attr('src', slides[currentSlide]);
   }
 });
-};
+
