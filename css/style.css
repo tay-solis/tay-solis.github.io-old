@@ -543,6 +543,10 @@ label{
   }
 }
 
+@media only screen and (max-width: 480px) {
+
+}
+
 @keyframes spin {
   100%{
     transform: rotate(1440deg);
