@@ -14,7 +14,8 @@ const LandingPage = ({ match }) => {
   useEffect(() => {
     const fetchData = async () => {
       // We are using the function to get a document by its UID
-      const result = await client.getByUID('page', uid)
+      const result = await client.getSingle('landingpage');
+      console.log(result);
 
       if (result) {
         // We use the State hook to save the document
@@ -30,13 +31,15 @@ const LandingPage = ({ match }) => {
 
   if (doc) {
     return (
-      <main className="page">
-        {/* This is how to get an image into your template */}
-        <img src={doc.data.image.url} alt={doc.data.image.alt} />
-        {/* This is how to render a Rich Text field as plain text */}
-        <h1>{RichText.asText(doc.data.title)}</h1>
-        {/* This is how to render a Rich Text field into your template as HTML */}
-        <RichText render={doc.data.description} linkResolver={linkResolver} />
+      <main className="landing-page">
+        <header className="landing-page__header-container">
+          <h1 className="landing-page__title">
+            {RichText.asText(doc.data.title)}
+          </h1>
+          <h2 className="landing-page__subtitle">
+            {RichText.asText(doc.data.subtitle)}
+          </h2>  
+        </header>
       </main>
     )
   } else if (notFound) {
