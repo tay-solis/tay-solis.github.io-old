@@ -1,0 +1,42 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": ["stylelint-scss"],
+  "ignoreFiles": ["**/vendor/*"],
+  "rules": {
+      "indentation": 4,
+      "at-rule-empty-line-before": [
+          "always",
+          {
+              "except": ["first-nested"],
+              "ignore": [
+                  "after-comment",
+                  "inside-block",
+                  "blockless-after-same-name-blockless",
+                  "blockless-after-blockless"
+              ]
+          }
+      ],
+      "block-closing-brace-newline-after": [
+          "always",
+          { "ignoreAtRules": ["if", "else"] }
+      ],
+      "property-no-unknown": [
+          true,
+          { "ignoreProperties": ["text-decoration-thickness"] }
+      ],
+      "at-rule-semicolon-newline-after": "always",
+      "block-closing-brace-empty-line-before": "never",
+      "color-hex-case": "upper",
+      "length-zero-no-unit": true,
+      "selector-type-case": "lower",
+      "unit-case": "lower",
+      "scss/selector-no-redundant-nesting-selector": true,
+      "at-rule-no-unknown": null,
+      "no-eol-whitespace": true,
+      "no-missing-end-of-source-newline": true,
+      "max-empty-lines": 2,
+      "scss/at-rule-no-unknown": true,
+      "selector-list-comma-newline-after": "always-multi-line",
+      "no-descending-specificity": null
+  }
+}
