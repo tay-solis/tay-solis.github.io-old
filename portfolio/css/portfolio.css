@@ -1,9 +1,0 @@
-.portfolio-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#abstract{
-  width: 75%;
-  text-align: center;
-}
