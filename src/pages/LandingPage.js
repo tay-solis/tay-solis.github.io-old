@@ -18,7 +18,7 @@ const LandingPage = ({ match }) => {
   useEffect(() => {
     const fetchData = async () => {
       // We are using the function to get a document by its UID
-      await client.getSingle('landingpage')
+      await client.getSingle('landing_page')
         .then(result => {
           return setDocData(result)
         })
